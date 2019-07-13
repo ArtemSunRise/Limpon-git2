@@ -1,0 +1,55 @@
+body {
+    font-family: 'OpenSans', sans-serif;
+}
+
+h1 {
+    font-weight: 600;
+    color: #192b59;
+    font-size: 80px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    color: #7581a1;
+    line-height: 26px; /* mezhstrochniy interval */
+    font-size: 16px;
+}
+
+.nav {
+    color: #7581a1;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+}
+.btn-free {
+    color: white;
+    font-weight: 400;
+    background: #1085e4;
+
+}
+.grid h2 {
+    font-size: 40px;
+    color: #192b59;
+    font-weight: 700;
+
+}
+.grid h2 span {
+    color: #1085e4;
+    font-weight: 800;
+    font-size: 14px;
+    display: block;
+
+}
+.grid-item h3 {
+    color: #192b59;
+    font-size: 20px;
+    font-weight: 600;
+}
+.grid-item a {
+    font-size: 14px;
+    color: #1085e4;
+    font-weight: 600;
+}
