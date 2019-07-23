@@ -4,43 +4,136 @@ body {
     line-height: 26px;
     /* mezhstrochniy interval */
     font-size: 16px;
+    position: relative;
 }
 
 h1 {
     font-weight: 600;
     color: #192b59;
-    font-size: 55px;
+    font-size: 75px;
+    max-width: 540px;
+    line-height: 1.1;
+    margin-top: 307px;
 }
 
 a {
     text-decoration: none;
 }
 
+.img-logo {
+    background: url(../img/logo.png);
+    width: 185px;
+    height: 54px;
+    display: block;
+}
+
+.page-header {
+    background: url(../img/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1010px;
+}
+
+.box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 53px;
+    margin-bottom: 305px;
+}
 
 .nav {
-    color: #7581a1;
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 700;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
-.btn-free {
+.nav>li {
+    padding: 0 20px;
+}
+
+.nav a {
+    color: #7581a1;
+    letter-spacing: 2px;
+}
+
+.page-header .btn-free {
     color: white;
     font-weight: 400;
     background: #1085e4;
 }
 
-.grid h2 {
+.header-image {
+    display: block;
+    position: absolute;
+    background: url(../img/bg.png);
+    width: 898px;
+    height: 742px;
+    top: 183px;
+    right: 0;
+}
+
+.page-company {
+    background: url(../img/sp-layer.png), #1482db;
+    height: 273px;
+}
+
+.page-company .wrap {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 273px;
+}
+
+.company-item:nth-child(1) {
+    background: url(../img/sp-logo1.png);
+    display: block;
+    width: 212px;
+    height: 77px;
+}
+
+.company-item:nth-child(2) {
+    background: url(../img/sp-logo2.png);
+    display: block;
+    width: 226px;
+    height: 94px;
+}
+
+.company-item:nth-child(3) {
+    background: url(../img/sp-logo3.png);
+    display: block;
+    width: 228px;
+    height: 70px;
+}
+
+.company-item:nth-child(4) {
+    background: url(../img/sp-logo4.png);
+    display: block;
+    width: 214px;
+    height: 86px;
+}
+
+/* grid */
+.page-grid h2 {
     font-size: 40px;
     color: #192b59;
     font-weight: 700;
+    max-width: 270px;
+    line-height: 50px;
 }
 
-.grid h2 span {
+.page-grid h2 span {
     color: #1085e4;
     font-weight: 800;
     font-size: 14px;
     display: block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 102px;
 }
 
 .grid-item h3 {
@@ -55,6 +148,24 @@ a {
     font-weight: 600;
 }
 
+.page-grid .wrap {
+    display: grid;
+    grid-template-columns: repeat (3, 1fr);
+    grid-template-rows: ;
+    justify-items: stretch;
+    align-items: stretch;
+
+}
+.grid-image:nth-child(1) {
+    background: url(../im)
+}
+.grid-item {
+    display: block;
+    text-align: center;
+    border: 2px orange solid;
+
+}
+
 .starter {
     font-size: 14px;
     color: #1085e4;
@@ -67,29 +178,28 @@ ul {
     padding: 0;
 }
 
-.btn-primary
+.btn-group {
+    margin-top: 70px;
+}
 
-    {
+.btn-primary {
     color: white;
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
     background-color: #1085e4;
     border: 1px solid #1085e4;
-    padding: 17px 34px;
+    padding: 22px 42px;
     border-radius: 30px;
     letter-spacing: 1.5px;
 }
+
 .btn-primary:hover {
     background-color: white;
     color: #1085e4;
-
 }
 
-.btn-secondary
-
-
-    {
+.btn-secondary {
     color: #7e8bae;
     font-size: 12px;
     font-weight: 700;
@@ -97,26 +207,26 @@ ul {
     background-color: #cbdbe8;
     border: 1px solid #cbdbe8;
     border-radius: 30px;
-    padding: 18px 31px;
+    padding: 22px 45px;
     margin-left: 13px;
     letter-spacing: 1.6px;
 }
+
 .btn-secondary:hover {
     background-color: white;
 }
 
-.btn-free
-
-    {
+.btn-free {
     font-weight: 600;
-    padding: 18px 43px;
+    padding: 23px 51px;
     border-radius: 50px;
     letter-spacing: 1.5px;
     font-size: 12px;
 }
+
 .btn-info {
     color: #8085b1;
-    font-size: 9px;
+    font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
     background-color: transparent;
@@ -125,16 +235,164 @@ ul {
     border-radius: 30px;
     letter-spacing: 1.5px;
 }
-/* mine 
-.img-logo {
-    margin-left: 410px;
-    margin-right: 155px;
-    display: inline;
+
+.list-stat {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
 }
-.page-header li {
-    color: #6e7ea9;
+
+.list-stat>li {
+    font-weight: 700;
     text-transform: uppercase;
     font-size: 12px;
-    margin-right: 40px;
-    display: inline;
+    color: #1085e4;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.list-stat>li>span {
+    display: block;
+    color: #bacbdc;
+    font-size: 60px;
+    margin-bottom: 20px;
+    letter-spacing: 0;
+}
+
+.wrap {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.title-50 {
+    font-size: 50px;
+    font-weight: 600;
+    color: #192b59;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.title-50>span {
+    display: block;
+    font-size: 16px;
+    color: #1085e4;
+    font-weight: 800;
+    margin-bottom: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2.7px;
+}
+
+.page-stat .title-50 {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto 50px auto;
+}
+
+.page-screen {
+    text-align: center;
+}
+
+.page-screen img {
+    margin-top: 50px;
+    margin-bottom: -8px;
+}
+
+/* page bg */
+.page-stat {
+    background-color: #edf6ff;
+    padding: 100px 0 100px
+}
+
+.page-screen {
+    background-color: #edf6ff;
+    padding-top: 100px;
+}
+
+/* mine */
+.box-price {
+    display: flex;
+}
+
+.page-plan h2 {
+    text-align: center;
+}
+
+.box-price-item {
+    flex-basis: 33%;
+    text-align: center;
+    background: #f5faff;
+    height: 620px;
+    justify-content: space-between;
+}
+
+.box-price-item h3 {
+    font-size: 70px;
+    font-weight: 700;
+    color: #192b59;
+    display: block;
+    margin: 70px auto 30px auto;
+}
+
+.box-price-item li {
+    line-height: 2.7;
+}
+
+.box-price-item:nth-child(1) h3 {
+    margin-bottom: 50px;
+}
+
+.box-price-item h3 span {
+    font-size: 14px;
+    color: #7b8ab2;
+}
+
+.starter {
+    color: #1085e4;
+    text-transform: uppercase;
+}
+
+.active {
+    margin: 0 30px;
+    background: #192b59;
+}
+
+.active h3, .active .dollar, .active li, .active a, .active .starter {
+    color: white;
+}
+
+.active a:hover {
+    color: #1085e4;
+    background: transparent;
+}
+
+.btn-info, .active .btn-primary {
+    display: block;
+    margin: 50px 50px 70px;
+}
+
+.btn-info:hover {
+    background: #cbdbe8;
+}
+
+.page-team {
+    background: url(../img/team-bg.png);
+    height: 600px;
+}
+
+.page-team .title-40 {
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.page-team .title-40 span {
+    color: #85c8ff;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+    padding-top: 115px;
+    margin-bottom: 30px;
 }
