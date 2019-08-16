@@ -339,7 +339,7 @@ a {
     border-radius: 50px;
     background-color: transparent;
     display: block;
-    padding: 23px 306px 23px 35px;
+    padding: 23px 332px 23px 35px;
     box-sizing: border-box;
     color: #fff;
 }
@@ -572,12 +572,16 @@ a {
 .btn-info, .active .btn-primary {
     display: block;
     margin: 50px 50px 70px;
+    padding: 16px;
 }
 
 .btn-info:hover {
     background: #cbdbe8;
 }
+/*software*/
+.page-software p{
 
+}
 /* team */
 .page-team {
     background: url(../img/team-bg.png);
